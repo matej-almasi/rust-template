@@ -1,0 +1,15 @@
+{
+    "editor.formatOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly"
+    ],
+    "cSpell.words": [
+        "binop",
+        "doru",
+        "liblz4",
+        "pkgid",
+        "serde",
+        "thiserror"
+    ]
+}

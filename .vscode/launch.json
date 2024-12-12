@@ -7,16 +7,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'doru'",
+            "name": "Debug unit tests in library '{{project-name}}'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=doru"
+                    "--package={{project-name}}"
                 ],
                 "filter": {
-                    "name": "doru",
+                    "name": "{{project-name}}",
                     "kind": "lib"
                 }
             },
@@ -26,15 +26,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'doru'",
+            "name": "Debug executable '{{project-name}}'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=doru",
-                    "--package=doru"
+                    "--bin={{project-name}}",
+                    "--package={{project-name}}"
                 ],
                 "filter": {
-                    "name": "doru",
+                    "name": "{{project-name}}",
                     "kind": "bin"
                 }
             },
@@ -44,16 +44,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'doru'",
+            "name": "Debug unit tests in executable '{{project-name}}'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=doru",
-                    "--package=doru"
+                    "--bin={{project-name}}",
+                    "--package={{project-name}}"
                 ],
                 "filter": {
-                    "name": "doru",
+                    "name": "{{project-name}}",
                     "kind": "bin"
                 }
             },

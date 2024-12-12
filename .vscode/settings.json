@@ -5,6 +5,7 @@
         "+nightly"
     ],
     "cSpell.words": [
+        "{{project-name}}",
         "binop",
         "doru",
         "liblz4",

@@ -1,4 +1,4 @@
-# {Project Name}
+# "{{project-name}}"
 
 {Project Description}
 

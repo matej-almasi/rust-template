@@ -11,4 +11,4 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!-- next-url -->
 
-[Unreleased]: https://github.com/matej-almasi/{PROJECT_NAME}/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/matej-almasi/{{project-name}}/compare/v0.1.0...HEAD

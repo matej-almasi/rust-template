@@ -6,10 +6,6 @@
     ],
     "cSpell.words": [
         "{{project-name}}",
-        "binop",
-        "doru",
-        "liblz4",
-        "pkgid",
         "serde",
         "thiserror"
     ]

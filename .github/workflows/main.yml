@@ -37,7 +37,10 @@ jobs:
             ~/.cargo/git/db/
             **/target/
           key: ${{ runner.os }}-cargo-${{ steps.toolchain.outputs.cachekey }}
-      
+
+      - name: Check
+        run: cargo check --all-targets -- -D warnings
+  
   build-and-test:
     needs: check
     runs-on: ubuntu-latest
@@ -71,7 +74,7 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ steps.toolchain.outputs.cachekey }}
 
       - name: Format
-        run: cargo +nightly fmt --check
+        run: cargo +nightly fmt --check --all
 
   clippy:
     needs: check

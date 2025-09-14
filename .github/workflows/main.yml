@@ -4,9 +4,16 @@ on:
   pull_request:
     branches:
       - main
+    paths: &changed_paths
+      - "src"
+      - "Cargo*"
+      - ".cargo"
+      - ".github/workflows/pr-main.yml"
+      - "rustfmt.toml"
   push:
     branches:
       - main
+    paths: *changed_paths
 
 env:
   CARGO_TERM_COLOR: always

@@ -8,8 +8,10 @@ on:
       - "src"
       - "Cargo*"
       - ".cargo"
-      - ".github/workflows/pr-main.yml"
+      - ".github/workflows/main.yml"
       - "rustfmt.toml"
+      - "build.rs"
+
   push:
     branches:
       - main

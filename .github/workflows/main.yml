@@ -39,7 +39,7 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ steps.toolchain.outputs.cachekey }}
 
       - name: Check
-        run: cargo check --all-targets -- -D warnings
+        run: cargo check --all-targets
   
   build-and-test:
     needs: check
